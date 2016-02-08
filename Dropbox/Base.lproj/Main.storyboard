@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Hab-xm-g8I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -323,18 +323,18 @@
                                         <rect key="frame" x="0.0" y="64" width="320" height="707"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="CC7-tb-uQC" userLabel="Settings">
+                                                <rect key="frame" x="0.0" y="-8" width="320" height="772"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qQD-EN-WQl" userLabel="Signout">
-                                                <rect key="frame" x="0.0" y="371" width="320" height="51"/>
+                                                <rect key="frame" x="0.0" y="679" width="320" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.93753943510000004" green="1" blue="0.66608882169999994" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <segue destination="WB4-Yq-7wq" kind="modal" id="1YJ-tV-Ya0"/>
                                                 </connections>
                                             </button>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="CC7-tb-uQC" userLabel="Settings">
-                                                <rect key="frame" x="0.0" y="-316" width="320" height="772"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -649,8 +649,8 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c3I-bH-edg"/>
-        <segue reference="1YJ-tV-Ya0"/>
         <segue reference="Vel-XL-Qcn"/>
+        <segue reference="Y2E-2W-PNm"/>
+        <segue reference="c3I-bH-edg"/>
     </inferredMetricsTieBreakers>
 </document>
