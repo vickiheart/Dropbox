@@ -9,7 +9,7 @@ Time spent: 15 hours spent in total
 
 The following **required** functionality is complete:
 
-[x] User can tap through the 3 welcome screens.
+[ x ] User can tap through the 3 welcome screens.
 
 [x] User can follow the create user flow.
 
