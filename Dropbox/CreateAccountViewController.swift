@@ -14,7 +14,30 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var fieldParentView: UIView!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var passwordImage: UIImageView!
+    @IBAction func welcomeButton(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+    }
+    @IBOutlet weak var createButton: UIButton!
     
+    
+    @IBAction func passwordAction(sender: AnyObject) {
+        if passwordField.text?.characters.count > 1 && passwordField.text?.characters.count <= 3 {
+            passwordImage.image = UIImage(named: "signup_1.png")
+        }
+            
+        else if passwordField.text?.characters.count > 3 && passwordField.text?.characters.count <= 5 {
+            passwordImage.image = UIImage(named: "signup_2.png")
+        }
+            
+        else if passwordField.text?.characters.count > 6 && passwordField.text?.characters.count <= 8 {
+            passwordImage.image = UIImage(named: "signup_3.png")
+        }
+            
+        else if passwordField.text?.characters.count > 9 {
+            passwordImage.image = UIImage(named: "signup_4.png")
+            createButton.alpha = 1
+        }
+    }
     
     @IBAction func onTap(sender: AnyObject) {
         print("tapoutside")
@@ -26,24 +49,8 @@ class CreateAccountViewController: UIViewController {
         super.viewDidLoad()
         
         firstName.becomeFirstResponder()
-        passwordField.text?.characters.count
         
-        if passwordField.text?.characters.count <= 3 {
-            passwordImage.image = UIImage(contentsOfFile: "signup_1.png")
-        }
         
-        else if passwordField.text?.characters.count > 3 {
-            passwordImage.image = UIImage(contentsOfFile: "signup_2.png")
-        }
-        
-        else if passwordField.text?.characters.count > 5 {
-            passwordImage.image = UIImage(contentsOfFile: "signup_3.png")
-        }
-        
-        else if passwordField.text?.characters.count > 7 {
-            passwordImage.image = UIImage(contentsOfFile: "signup_4.png")
-        }
-    
         // Do any additional setup after loading the view.
     }
 

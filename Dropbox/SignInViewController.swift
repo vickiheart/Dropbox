@@ -1,19 +1,21 @@
 //
-//  SignInRootViewController.swift
+//  SignInViewController.swift
 //  Dropbox
 //
-//  Created by Vicki Tan on 2/2/16.
+//  Created by Vicki Tan on 2/7/16.
 //  Copyright © 2016 Vicki Tan. All rights reserved.
 //
 
 import UIKit
 
-class SignInRootViewController: UIViewController {
+class SignInViewController: UIViewController {
 
+    @IBAction func welcomeButton(sender: AnyObject) {
+            navigationController!.popViewControllerAnimated(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        performSegueWithIdentifier("signInSegue", sender: self)
 
         // Do any additional setup after loading the view.
     }

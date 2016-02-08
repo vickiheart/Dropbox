@@ -9,9 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var scrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.contentSize = CGSize(width: 960, height: 568)
+        scrollView.frame.size = CGSize(width: 320, height: 568)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
